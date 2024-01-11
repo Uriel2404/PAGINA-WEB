@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script type="text/javascript" src="Funciones.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+	<title>Consultores Caterpillar</title>
+
+
+	<style>
+		#imagen {
+      	position: relative;
+      	transition: 0.3s;
+    	}
+
+	</style>
+
+
+
+</head>
+<body>
+	<!--MENÚ-->
+	<nav class="menu">
+		<div class="hamburguesa" onclick="mostrar()">
+			<span></span><span></span><span></span>
+		</div>
+		<div class="logo1">
+			<img src="Imágenes/1.png">
+		</div>
+		<label class="logo">Consultores Caterpillar</label>
+		<ul id="menu-desplegable">
+			<li><span class="cerrar" onclick="ocultar()">X</span></li>
+			<li><a href="Pagina.html">INICIO</a></li>
+			<li><a href="Productos.html">PRODUCTOS</a></li>
+			<li><a href="consul.html">CONSULTORÍA</a></li>
+			<li><a href="login.php">INICIO DE SESIÓN</a></li>
+		</ul>
+	</nav>
+	<!--BANNER-->
+	
+		<section class="servicios">
+				<h1 class="titulo">NUESTROS PRODUCTOS</h1>
+				<div class="linea"></div>
+				<div class="contenido">
+					
+					<!--SECCIÓN DE IMÁGENES 1-->
+					<div class="imagen">
+						<div><img src="Imágenes/5.jpg"></div>
+						<p >CAMIONES ARTICULADOS</p>
+						<div class="boton2" onclick="mostrarInformacion(event, 1)">Ver más</div>
+						<div id="imagen1-info" class="imagen-info">
+							<P>Los camiones articulados Cat® transportan un amplio espectro de materiales en distintas aplicaciones y condiciones del suelo. El simple funcionamiento y la comodidad de estilo automotriz, así como la combinación de puntos de servicio e intervalos prolongados de servicio de estos camiones de descarga le permiten enfocarse en su trabajo y perder menos tiempo y dinero en realizar el mantenimiento.</P>
+						  	<b>Modelo del motor</b>
+						  	<p>C18 Cat®</p>
+						  	<b>Carga útil nominal</b>
+						  	<p>41 t</p>
+						  	<b>Colmada (SAE 2:1)</b>
+						  	<P>25 m³</P>
+						</div>
+					</div>
+
+					<div class="imagen">
+						<div><img src="Imágenes/6.jpg"></div>
+						<p>CAMIONES DE OBRAS</p>
+						<div class="boton2" onclick="mostrarInformacion(event, 2)">Ver más</div>
+						<div id="imagen2-info" class="imagen-info">
+							<P>Durante más de 50 años, los resistentes camiones de obras y camiones mineros Cat® han funcionado en las difíciles condiciones de minas, proyectos de construcción y canteras en todo el mundo. Adaptados a nuestros cargadores de ruedas y excavadoras, puede confiar en nuestros camiones de acarreo para obtener una productividad máxima a un bajo costo por tonelada.							</P>
+						  	<b>Modelo del motor</b>
+						  	<p>C15 ACERT™ Cat®</p>
+						  	<b>Clase de carga útil nominal (100%)</b>
+						  	<p>38.6 t</p>
+						  	<b>Velocidad máxima con carga</b>
+						  	<P>73.5 Km/h</P>
+						</div>
+					</div>
+
+					<div class="imagen">
+						<div><img src="Imágenes/7.jpg"></div>
+						<p>CARGADORES DE CADENAS</p>
+						<div class="boton2" onclick="mostrarInformacion(event, 3)">Ver más</div>
+						<div id="imagen3-info" class="imagen-info">
+						  <p>Ahorre dinero y tiempo de transporte con una máquina resistente para desmonte de terrenos, excavaciones, nivelaciones, carga de camiones, trabajos en pendientes y más. Los trabajos exigentes, el terreno irregular y los espacios reducidos no son rivales para la versátil línea de cargadores de cadenas Cat®.						  </p>
+						  <b>Potencia del volante</b>
+						  <p>205 KW</p>
+						  <b>Peso en orden de trabajo</b>
+						  <p>28985 kg</p>
+						  <b>Capacidad de uso general</b>
+						  <P>3.2 m³</P>
+						</div>
+					</div>
+
+					<div class="imagen">
+						<div><img src="Imágenes/8.jpg"></div>
+						<p>CARGADORES DE RUEDAS</p>
+						<div class="boton2" onclick="mostrarInformacion(event, 4)">Ver más</div>
+						<div id="imagen4-info" class="imagen-info">
+						  <p>Los cargadores de ruedas Cat® permiten que los trabajos de manipulación de materiales y de carga sean más seguros, rápidos, precisos y rentables. Los cargadores delanteros Cat fijan el estándar en cuanto a confiabilidad, productividad, eficiencia del combustible, versatilidad y comodidad del operador.						  </p>
+						  <b>Potencia bruta máxima</b>
+						  <p>140 KW</p>
+						  <b>Peso en orden de trabajo</b>
+						  <p>15282 kg</p>
+						  <b>Capacidad del cucharon</b>
+						  <p>2,5 a 5,00m³</p>
+						</div>
+					</div>
+
+				</div>
+
+<BR></BR>
+
+		</section>
+
+		<H2 class="TEXTO9">PARA VER EL CATÁLOGO COMPLETO DE NUESTROS PRODUCTOS FAVOR DE INICIAR SESIÓN</H2>
+		<a class="boton" href="login.php">INICIAR SESIÓN</a>
+
+
+
+
+		<!--REDES SOCIALES-->
+		<footer class="redes">
+			<h3>SÍGUENOS EN:</h3>
+			<i class="bx bxl-facebook-circle bx-md bx-tada-hover espacio" style = 'color:#ffffff'></i>
+			<i class="bx bxl-instagram-alt  bx-md bx-tada-hover espacio" style = 'color:#ffffff'></i>
+			<i class="bx bxl-youtube  bx-md bx-tada-hover espacio" style = 'color:#ffffff'></i>
+			<i class="bx bxl-twitter  bx-md bx-tada-hover espacio" style = 'color:#ffffff'></i>
+			<i class="bx bxl-telegram  bx-md bx-tada-hover espacio" style = 'color:#ffffff'></i>
+			<i class="bx bxl-tiktok  bx-md bx-tada-hover espacio" style = 'color:#ffffff'></i>
+		</footer>
+	</main>
+</body>
+</html>
